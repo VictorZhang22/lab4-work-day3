@@ -1,0 +1,12 @@
+Third entry (10/1/2021 8:10pm – 9:20pm):
+So I started to work on problem 4. I drew a rough diagram of what my code will look like because one of my main issues right now is turning my diagrams into chunks of code. So, I decided to use a nested loop in order to multiple every number between 100 and 1000. After the multiplying, all results will be appended to a list. I wrote a helper function that makes sure that the numbers are all palindromes with this line: 
+
+if str(x) == str(x)[::-1]
+
+So, all the numbers that satisfy the statement will be appended to a new list. This list will only contain palindromes. Then I create a new variable that is the first element of the list. I then iterate through the list comparing the elements in the list to the variable. If an element from the list is bigger than the smallest variable, then I update the smallest variable to be the biggest number so far. And at the very end I simply return the smallest variable which is also the biggest palindrome. 
+
+This problem took me less time than I thought. I think one big part is that I am drawing the diagram in a more code-like fashion. Before I use arrows or circles to indicate the steps. But this time I wrote parts of the code while creating the diagram, which made the transition easier. After I finished problem 4, I moved on to problem 5.
+
+So, problem 5 is not as hard as it appeared to be. I did the same thing with drawing the diagram and got a clear blueprint on what the program should look like. I thought that it would be helpful to use infinity, which can be represented by math.inf in Python. I have a for loop that goes through 1 and math.inf. The if statement that follows checks if the number is divisible by all the numbers between 1 and 20. I kept on running into this problem that Python says that math.inf is a float and this float cannot be interpreted as an integer. I tried to use int(math.inf) to cast the float into an integer but Python says that the conversion can not be done.  I will seek help on Monday when I have CS. 
+
+I think I spent the 70 mins efficiently and the process of working is pretty good. I noticed that I am using more nested loops which I think is a cool thing. I am getting more practice and it is helping me with coding more efficiently. Also I really like the new way of creating diagram as it is more simple.
