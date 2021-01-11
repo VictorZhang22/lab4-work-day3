@@ -1,0 +1,27 @@
+def is_palindrone(myList): # so this is my helper function
+    newResults = [] # this list will contain palindrones
+    for x in myList:
+        if str(x) == str(x)[::-1]: # this line tests to see if the numbers are actually palindronic
+            newResults.append(x) # the palindrones are in the list now
+    smallest = newResults[0] # I assign the first element of the list to be the smallest variable
+    for y in newResults:
+        if y > smallest: # this line tests to see if any of the elements in the list is bigger than the smallest variable
+            smallest = y # if the if statement is true, then the smallest number will become the biggest number seen so far
+    return smallest # this line returns the biggest palindrone
+
+
+def is_biggest_palindrone(): # this is my main function
+    results = [] #t his is a list that will have all of the possible results
+    for x in range(100, 1000): 
+        for y in range(100, 1000): # the nested loop makes sure that the products between every number from 100-1000
+            results.append(x*y) # this line appends the numbers to the list
+    answer = is_palindrone(results) # this line calls for a helper function to make sure that only the biggest palindrone number is selected and returned
+    return answer # this line returns the answer
+
+
+
+
+def smallest_multiple():
+    for x in range(10, int(math.inf)):
+        if x % 1 == 0 and x % 2 == 0 and x % 3 == 0 and x % 4 == 0 and x % 5 == 0 and x % 6 == 0 and x % 7 == 0 and x % 8 == 0 and x % 9 == 0 and x % 10 == 0 and x % 11 == 0 and x % 12 == 0 and x % 13 == 0 and x % 14 == 0 and x % 15 == 0 and x % 16 == 0 and x % 17 == 0 and x % 18 == 0 and x % 19 == 0 and x % 20 == 0:
+            print(x)
