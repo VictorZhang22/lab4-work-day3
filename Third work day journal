@@ -1,4 +1,4 @@
-Third entry (10/1/2021 8:10pm – 9:20pm (75 minutes)):
+Third entry (10/1/2021 8:10pm – 9:20pm (70 minutes)):
 So I started to work on problem 4. I drew a rough diagram of what my code will look like because one of my main issues right now is turning my diagrams into chunks of code. So, I decided to use a nested loop in order to multiple every number between 100 and 1000. After the multiplying, all results will be appended to a list. I wrote a helper function that makes sure that the numbers are all palindromes with this line: 
 
 if str(x) == str(x)[::-1]
